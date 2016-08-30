@@ -211,92 +211,17 @@ function create_config( )
   -- A simple config with basic plugins and ourselves as privileged user
   config = {
     enabled_plugins = {
-    "Abjad",
-    "Add_Plugin",
-    "Admin",
-    "All",
-    "Anti_Spam",
-    "Arabic_Lock",
-    "Arz",
     "Banhammer",
-    "Broadcast",
-    "Cpu",
-    "Dictionary",
-    "Fantasy_Writer",
-    "Get",
-    "Get_Plugins",
-    "Info",
     "Ingroup",
     "Inpm",
     "Inrealm",
-    "Instagram",
     "Leave_Ban",
-    "Lock_Emoji",
-    "Lock_English",
-    "Lock_Forward",
-    "Lock_Fosh",
-    "Lock_Join",
-    "Lock_Media",
-    "Lock_Operator",
-    "Lock_Reply",
-    "Lock_Tag",
-    "Lock_Username",
-    "Msg_Checks",
-    "Music",
-    "Onservice",
-    "Owners",
     "Plugins",
-    "Remove_Plugin",
-    "Rmsg",
-    "Serverinfo",
-    "Set",
-    "Set_Type",
-    "Stats",
     "Supergroup",
-    "Tagall",
-    "Terminal",
-    "TextSticker",
-    "Time",
-    "Voice",
-    "Weather",
-    "Welcome",
-    "Whitelist",
-    "Sticker",
-    "Photo",
-    "Aparat",
-    "InvPouria",
     "Del_Gban",
-    "Date",
-    "Badwords",
-    "FileManager",
-    "Invite",
-    "Warn",
-    "Caption",
-    "Payamresan"
     },
     sudo_users = {175636120,214795464,198794027,180252366},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[👑 Signal Bot 👑
-An advanced administration bot based on TG-CLI written in Lua
-
-🔰 Github 🔰
-https://github.com/SIGNALTEAM/SignalTG.git
-
-Admins:
-🔥 @Ww_Developer_wW [Founder & Developer] 🔥
-
-🔥 @Mr_Hidden [Sudo & Manager] 🔥
-
-🔥 @SigNal_Founder [Sudo] 🔥
-
-🔥 @Im_Best_Sudo [Sudo] 🔥
-
-Special thanks to
-SEEDTEAM
-
-Our channels
-@Signal_CH
-]],
     help_text_realm = [[
 Realm Commands:
 
