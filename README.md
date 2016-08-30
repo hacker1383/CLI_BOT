@@ -1,3 +1,5 @@
+BTTTEAM CLI ANTI SPAM BOT
+BY:@MEJOIN
 ```sh
 # Install dependencies.
 # Tested on Ubuntu 14.04. For other OSs, check out https://github.com/yagop/telegram-bot/wiki/Installation
