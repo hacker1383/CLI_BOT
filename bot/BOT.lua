@@ -220,291 +220,124 @@ function create_config( )
     "Supergroup",
     "Del_Gban",
     },
-    sudo_users = {175636120,214795464,198794027,180252366},
+    sudo_users = {119296662},
     moderation = {data = 'data/moderation.json'},
     help_text_realm = [[
-Realm Commands:
 
-!creategroup [Name]
-🔵 ساختن گروه 🔴
-〰〰〰〰〰〰〰〰
-!createrealm [Name]
-🔵 ساختن مقرفرماندهی 🔴
-〰〰〰〰〰〰〰〰
-!setname [Name]
-🔵 عوض کردن اسم مقرفرماندهی 🔴
-〰〰〰〰〰〰〰〰
-!setabout [group|sgroup] [GroupID] [Text]
-🔵 عوض کردن متن درباره ی گروه یا سوپرگروه 🔴
-〰〰〰〰〰〰〰〰
-!setrules [GroupID] [Text]
-🔵 قانونگذاری برای یک گروه 🔴
-〰〰〰〰〰〰〰〰
-!lock [GroupID] [setting]
-🔵 قفل کردن تنظیمات یک گروه 🔴
-〰〰〰〰〰〰〰〰
-!unlock [GroupID] [setting]
-🔵 باز کردن تنظیمات یک گروه 🔴
-〰〰〰〰〰〰〰〰
-!settings [group|sgroup] [GroupID]
-🔵 مشاهده تنظیمات یک گروه یا سوپرگروه 🔴
-〰〰〰〰〰〰〰〰
-!wholist
-🔵 مشاهده لیست اعضای گروه یا مقرفرماندهی 🔴
-〰〰〰〰〰〰〰〰
-!who
-🔵 دریافت فایل اغضای گروه یا مقرفرماندهی 🔴
-〰〰〰〰〰〰〰〰
-!type
-🔵 مشاهده ی نوع گروه 🔴
-〰〰〰〰〰〰〰〰
-!kill chat [GroupID]
-🔵 پاک کردن یک گروه و اعضای آن 🔴
-〰〰〰〰〰〰〰〰
-!kill realm [RealmID]
-🔵 پاک کردن یک مقرفرماندهی و اعضای آن 🔴
-〰〰〰〰〰〰〰〰
-!addadmin [id|username]
-🔵 ادمین کردن یک شخص در ربات (فقط برای سودو) 🔴
-〰〰〰〰〰〰〰〰
-!removeadmin [id|username]
-🔵 پاک کردن یک شخص از ادمینی در ربات (فقط برای سودو) 🔴
-〰〰〰〰〰〰〰〰
-!list groups
-🔵 مشهاده لیست گروه های ربات به همراه لینک آنها 🔴
-〰〰〰〰〰〰〰〰
-!list realms
-🔵 مشاهده لیست مقرهای فرماندهی به همراه لینک آنها 🔴
-〰〰〰〰〰〰〰〰
-!support
-🔵 افزودن شخص به پشتیبانی 🔴
-〰〰〰〰〰〰〰〰
-!-support
-🔵 پاک کردن شخص از پشتیبانی 🔴
-〰〰〰〰〰〰〰〰
-!log
-🔵 دریافت ورود اعضا به گروه یا مقرفرماندهی 🔴
-〰〰〰〰〰〰〰〰
-!broadcast [text]
-!broadcast Hello !
-🔵 ارسال متن به همه گروه های ربات (فقط مخصوص سودو) 🔴
-〰〰〰〰〰〰〰〰
-!bc [group_id] [text]
-!bc 123456789 Hello !
-🔵 ارسال متن به یک گروه مشخص 🔴
-〰〰〰〰〰〰〰〰
-💥 شما میتوانید از / و ! و # استفاده کنید 💥
 ]],
     help_text = [[
-Commands list :
+تنظیمات قفل
 
-!kick [username|id]
-🔵 اخراج شخص از گروه 🔴
-〰〰〰〰〰〰〰〰
-!ban [ username|id]
-🔵 مسدود کردن شخص از گروه 🔴
-〰〰〰〰〰〰〰〰
-!unban [id]
-🔵 خارج کردن فرد از لیست مسدودها 🔴
-〰〰〰〰〰〰〰〰
-!who
-🔵 لیست اعضای گروه 🔴
-〰〰〰〰〰〰〰〰
-!modlist
-🔵 لیست مدیران 🔴
-〰〰〰〰〰〰〰〰
-!promote [username]
-🔵 افزودن شخص به لیست مدیران 🔴
-〰〰〰〰〰〰〰〰
-!demote [username]
-🔵 خارج کردن شخص از لیست مدیران 🔴
-〰〰〰〰〰〰〰〰
-!kickme
-🔵 اخراج خود از گروه 🔴
-〰〰〰〰〰〰〰〰
-!about
-🔵 دریافت متن گروه 🔴
-〰〰〰〰〰〰〰〰
-!setphoto
-🔵 عوض کردن عکس گروه 🔴
-〰〰〰〰〰〰〰〰
-!setname [name]
-🔵 عوض کردن اسم گروه 🔴
-〰〰〰〰〰〰〰〰
-!rules
-🔵 دریافت قوانین گروه 🔴
-〰〰〰〰〰〰〰〰
-!id
-🔵 دریافت آیدی گروه یا شخص 🔴
-〰〰〰〰〰〰〰〰
-!help
-🔵 دریافت لیست دستورات 🔴
-〰〰〰〰〰〰〰〰
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-🔵 قفل کردن تنظیمات 🔴
-〰〰〰〰〰〰〰〰
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict]
-🔵 بازکردن قفل تنظیمات گروه 🔴
-〰〰〰〰〰〰〰〰
-!mute [all|audio|gifs|photo|video]
-🔵 بیصدا کردن فرمت ها 🔴
-〰〰〰〰〰〰〰〰
-!unmute [all|audio|gifs|photo|video]
-🔵 از حالت بیصدا درآوردن فرمت ها 🔴
-〰〰〰〰〰〰〰〰
-!set rules <text>
-🔵 تنظیم قوانین برای گروه 🔴
-〰〰〰〰〰〰〰〰
-!set about <text>
-🔵 تنظیم متن درباره ی گروه 🔴
-〰〰〰〰〰〰〰〰
-!settings
-🔵 مشاهده تنظیمات گروه 🔴
-〰〰〰〰〰〰〰〰
-!muteslist
-🔵 لیست فرمت های بیصدا 🔴
-〰〰〰〰〰〰〰〰
-!muteuser [username]
-🔵 بیصدا کردن شخص در گروه 🔴
-〰〰〰〰〰〰〰〰
-!mutelist
-🔵 لیست افراد بیصدا 🔴
-〰〰〰〰〰〰〰〰
-!newlink
-🔵 ساختن لینک جدید 🔴
-〰〰〰〰〰〰〰〰
-!link
-🔵 دریافت لینک گروه 🔴
-〰〰〰〰〰〰〰〰
-!owner
-🔵 مشاهده آیدی صاحب گروه 🔴
-〰〰〰〰〰〰〰〰
-!setowner [id]
-🔵 یک شخص را به عنوان صاحب گروه انتخاب کردن 🔴
-〰〰〰〰〰〰〰〰
-!setflood [value]
-🔵 تنظیم حساسیت اسپم 🔴
-〰〰〰〰〰〰〰〰
-!stats
-🔵 مشاهده آمار گروه 🔴
-〰〰〰〰〰〰〰〰
-!save [value] <text>
-🔵 افزودن دستور و پاسخ 🔴
-〰〰〰〰〰〰〰〰
-!get [value]
-🔵 دریافت پاسخ دستور 🔴
-〰〰〰〰〰〰〰〰
-!clean [modlist|rules|about]
-🔵 پاک کردن [مدیران ,قوانین ,متن گروه] 🔴
-〰〰〰〰〰〰〰〰
-!res [username]
-🔵 دریافت آیدی افراد 🔴
-💥 !res @username 💥
-〰〰〰〰〰〰〰〰
-!log
-🔵 لیست ورود اعضا 🔴
-〰〰〰〰〰〰〰〰
-!banlist
-🔵 لیست مسدود شده ها 🔴
-〰〰〰〰〰〰〰〰
-💥 شما میتوانید از / و ! و # استفاده کنید 💥
-]],
-	help_text_super =[[
-SuperGroup Commands:
+#lock|unlock links قفل لینک
+#lock|unlock flood  قفل حساسیت اسپم
+#lock|unlock spam قفل اسپم
+#lock|unlock member قفل اعضا
+#lock|unlock sticker قفل استیکر 
+#lock|unlock contacts قفل شیر کردن شماره
+#lock|unlock strict تنظیمات سخت گیرانه 
+#lock|unlock fosh قفل فحش
+#lock|unlock bots قفل ربات ها 
+#lock|unlock fwd قفل فوروارد
+#lock|unlock emoji قفل شکلک
+#lock|unlock reply قفل ریپلی
+#lock|unlock rtl پاک کردن پیغام جوین شدن
+#lock|unlock tgservirce قفل خدمات تلگرام
+ تنطیم نام گروه
+#setname [msg groupname]
 
-!gpinfo
-🔵 دریافت اطلاعات سوپرگروه 🔴
-!admins
-🔵 دریافت لیست ادمین های سوپرگروه 🔴
-!owner
-🔵 مشاهده آیدی صاحب گروه 🔴
-!modlist
-🔵 مشاهده لیست مدیران 🔴
-!bots
-🔵 مشهاده لیست بات های موجود در سوپرگروه 🔴
-!who
-🔵 مشاهده لیست کل اعضای سوپرگروه 🔴
-!block
-🔵 اخراج شخص از سوپرگروه 🔴
-!kick
-🔵 اخراج شخص از سوپرگروه 🔴
-!ban
-🔵 مسدود کردن شخص از سوپرگروه 🔴
-!unban
-🔵 خارج کردن شخص از لیست مسدودها 🔴
-!id
-🔵 مشاهده آیدی سوپرگروه یا شخص 🔴
-!id from
-🔵 گرفتن آیدی شخصی که از او فوروارد شده است 🔴
-!kickme
-🔵 اخراج خود از سوپرگروه 🔴
-!setowner
-🔵 یک شخص را به عنوان صاحب گروه انتخاب کردن 🔴
-!promote [username|id]
-🔵 افزودن یک شخص به لیست مدیران 🔴
-!demote [username|id]
-🔵 پاک کردن یک شخص از لیست مدیران 🔴
-!setname
-🔵 عوض کردن اسم گروه 🔴
-!setphoto
-🔵 عوض کردن عکس گروه 🔴
-!setrules
-🔵 قانونگذاری برای گروه 🔴
-!setabout
-🔵 عوض کردن متن درباره ی گروه 🔴
-!save [value] <text>
-🔵 افزودن دستور و پاسخ 🔴
-!get [value]
-🔵 دریافت پاسخ دستور 🔴
-!newlink
-🔵 ساختن لینک جدید 🔴
-!link
-🔵 دریافت لینک گروه 🔴
-!rules
-🔵 دریافت قوانین گروه 🔴
-!lock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
-🔵 قفل کردن تنظیمات 🔴
-!unlock [links|flood|spam|Arabic|member|rtl|sticker|contacts|strict|tag|username|fwd|reply|fosh|tgservice|leave|join|emoji|english|media|operator]
-🔵 بازکردن قفل تنظیمات گروه 🔴
-!mute [all|audio|gifs|photo|video|service]
-🔵 بیصدا کردن فرمت ها 🔴
-!unmute [all|audio|gifs|photo|video|service]
-🔵 از حالت بیصدا خارج کردن فرمت ها 🔴
-!setflood [value]
-🔵 تنظیم حساسیت اسپم 🔴
-!type [name]
-🔵 تنظیم نوع گروه 🔴
-!settings
-🔵 مشاهده تنظیمات گروه 🔴
-!mutelist
-🔵 لیست افراد بیصدا 🔴
-!silent [username]
-🔵 بیصدا کردن شخص در گروه 🔴
-!silentlist
-🔵 لیست افراد بیصدا 🔴
-!banlist
-🔵 مشاهده لیست مسدود شده ها 🔴
-!clean [rules|about|modlist|silentlist|badwords]
-🔵 پاک کردن [مدیران ,قوانین ,متن گروه,لیست بیصداها, لیست کلمات غیرمجاز] 🔴
-!del
-🔵 پاک کردن پیام با ریپلی 🔴
-!addword [word]
-🔵 افزودن کلمه به لیست کلمات غیرمجاز🔴
-!remword [word]
-🔵 پاک کردن کلمه از لیست کلمات غیرمجاز 🔴
-!badwords
-🔵 مشاهده لیست کلمات غیرمجاز 🔴
-!clean msg [value]
-🔵 پاک کردن تعداد پیام مورد نظر 🔴
-!public [yes|no]
-🔵 همگانی کردن گروه 🔴
-!res [username]
-🔵 به دست آوردن آیدی یک شخص 🔴
-!log
-🔵 لیست ورود اعضا 🔴
-〰〰〰〰〰〰〰〰
-💥 شما میتوانید از / و ! و # استفاده کنید 💥
-💥 برای افزودن سازنده روبات به گروه استفاده کنند !invpouria صاحبان گروه میتونند از دستور 💥
+ تنظیم عکس گروه
+#setphoto
+
+ تنظیم قوانین
+#setrules
+
+ تنظیم اطلاعات
+#setabout
+
+ لینک گروه
+#link
+ تنظیمات
+
+#settings
+
+ ایدی عددی
+#id
+
+ اعلام قوانین
+#rules
+
+ اعلام اطلاعات
+#about
+
+ اعلام ایدی شخص
+#res [msg id]
+
+اضافه کلمه به فیلتر
+#addword [msg word]
+
+
+
+ حذف کلمات فیلتر شده
+#clearbadwords
+
+لیست کلمات فیلتر شده
+#badwords
+ 
+پاک کردن
+#clean rules پاک کردن قوانین 
+#clean about پاک کردن توضیحان
+#clean modlist پاک کردن مدیران
+#clean silentlistپاک  افراد  سایلنت شده
+
+ سایلنت کاربر
+#silent ( id )
+
+لیست سایلنت ها
+#silentlist 
+
+سایلنت یا لغو سایلنت
+
+#mute|unmute all قفل ارسال عکس،چت،فیلمو....
+#mute|unmute audio قفل ارسال  ویس و اهنگ
+#mute|unmute gifs قفل ارسال کیف
+#mute|unmute photo قفل ارسال عکس 
+#mute|unmute video قفل ارسال فیلم
+
+
+ مدیران
+#admins لیست ادمین ها
+#owner نشان دادن مدیر اصلی
+#modlist مدیران از طریق ربات
+#promote ارتقاع ب مدیر از ربات 
+#demote محروم کردن فرد از هدایت ربات
+
+ محدود تکرار کلمه
+#setflood عدد
+
+مسدود کردن کاربر
+#ban [id]
+
+لغو مسدودی
+#unban
+
+لیست مسدود شده ها
+#banlist
+
+لیست اعضا
+#who
+
+ابزارها
+#weather نام استان یا شهر
+اب و هوا!
+حذف پیام ب تعداد موردنظر
+#clean deleted 
+پاک کردن دیلیت اکانت ها از گروه 
+
+توجه! تمامیه دستورات با  /!#  قابل انجام میباشد
+
+
+BTTEAM 
+@BTTEAM_TG
 ]],
   }
   serialize_to_file(config, './data/config.lua')
